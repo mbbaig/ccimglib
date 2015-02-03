@@ -1,0 +1,12 @@
+#ifndef CCIMGLIB_GLOBAL_H
+#define CCIMGLIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CCIMGLIB_LIBRARY)
+#  define CCIMGLIBSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define CCIMGLIBSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // CCIMGLIB_GLOBAL_H
